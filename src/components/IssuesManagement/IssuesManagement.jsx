@@ -4,19 +4,21 @@ import IssueCard from "./IssueCard";
 import CountCard from "./../CountCard/CountCard"
 
 
-const Card = ({ fetchPromise }) => {
+const Card = ({ ticket, setTicket, count, setCount }) => {
+  
 
-  const initialData = use(fetchPromise);
 
-    const [data, setData] = useState(initialData);
-    console.log(data)
+
+ console.log(count)
+
+  
 
   return (
       <div className="bg-gray-100 ">
           
-          <CountCard data={data} setData={setData}></CountCard>
-          
-
+         
+      <CountCard count={count} />
+    
 
 
           
@@ -30,8 +32,8 @@ const Card = ({ fetchPromise }) => {
                   
                   <div className="col-span-9 grid grid-cols-1 md:grid-cols-2 gap-3 mb-4 p-5 md:p-0">
                       
-                      {initialData.map((issue, ind) => (
-                        <IssueCard  key={ind}  issue={issue}></IssueCard>
+                      {ticket.map((t) => (
+                        <IssueCard key={t.id} count={count} setCount={setCount} t={t} ticket={ticket} setTicket={setTicket}></IssueCard>
                        
                     ))}
             
@@ -40,8 +42,10 @@ const Card = ({ fetchPromise }) => {
             </div>
 
                   {/*------------- Aside side-------------*/}
-                  <Aside></Aside>
-        
+                 
+          {
+            count.map(item => <Aside key={item.id} item={item} /> )
+        }
         </div>
       </div>
     </div>

@@ -2,13 +2,13 @@ import React from 'react';
 import bgImg1 from './../../assets/vector1.png';
 import bgImg2 from './../../assets/vector2.png';
 
-const CountCard = ({ data }) => {
+const CountCard = ({ count}) => {
     // console.log(data)
 
-    const openData = data.filter((element) => element.status === "Open");
-    const inProgressData = data.filter((element) => element.status === "In Progress");
+    // const openData = t.filter((element) => element.status === "Open");
+    // const inProgressData = t.filter((element) => element.status === "In Progress");
 
-    console.log({openData,inProgressData})
+    // console.log({openData,inProgressData})
     
     return (
 
@@ -19,7 +19,7 @@ const CountCard = ({ data }) => {
                  <img src={bgImg1} alt="" />   
                     <div className='text-center '>
                     <h2 className='font-semibold whitespace-nowrap'>In-Progress</h2>
-                        <p className='text-3xl text bold'>{inProgressData.length}</p>
+                        <p className='text-3xl text bold'>{count.length}</p>
                     
                     </div>
                     <img src={bgImg2} alt="" />
@@ -30,7 +30,7 @@ const CountCard = ({ data }) => {
                     <img src={bgImg1} alt="" />
                     <div className='text-center'>
                     <h2 className='font-semibold'>Resolved</h2>
-                        <p className='text-3xl text bold'>{ openData.length}</p>
+                        <p className='text-3xl text bold'>{ count.length}</p>
                     </div>
                     <img src={bgImg2} alt="" />
                 </div>
