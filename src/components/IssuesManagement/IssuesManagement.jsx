@@ -14,7 +14,7 @@ const Card = ({ fetchPromise }) => {
   return (
       <div className="bg-gray-100 ">
           
-          <CountCard data={data}></CountCard>
+          <CountCard data={data} setData={setData}></CountCard>
           
 
 

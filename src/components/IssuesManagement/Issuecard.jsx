@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 const IssueCard = ({ issue }) => {
-
+ 
 
   return (
-    <div className="bg-white rounded-lg shadow p-2 ">
+    <div 
+      className="bg-white rounded-lg shadow p-2 cursor-pointer ">
       <div className="flex justify-between items-start">
-        <div>
+        <div className="">
           <h3 className="font-semibold text-gray-900">{issue.title}</h3>
           <p className="text-sm text-gray-600 mt-2 line-clamp-1">
             {issue.description}

@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Aside = () => {
+
+    const [isCompleted, setIsCompleted] = useState (false);
+    
+     const handleComplete = () => {
+        setIsCompleted(true); 
+    }
+
+
+
     return (
         
                     
@@ -10,7 +19,9 @@ const Aside = () => {
                              <h1 className='font-semibold text-gray-800 text-xl mb-2'>Task Status</h1>
                             <div className='bg-white p-3 '>
                                 <h3 className='font-semibold'>Payment Failed - Card Declined</h3>
-                                <button className='btn bg-green-600 w-full text-white mt-2'>Complete</button>
+                                <button className={`btn w-full mt-2 text-white ${isCompleted ? 'bg-gray-400' : 'bg-green-600'}`}
+                        onClick={handleComplete}
+                      >Complete</button>
                             </div>
                         </div>
 
