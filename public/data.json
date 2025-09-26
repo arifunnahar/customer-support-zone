@@ -1,0 +1,111 @@
+
+[
+  {
+    "id": 1001,
+    "title": "Login page not loading",
+    "description": "The login page fails to load on Chrome and Firefox.",
+    "customer": "Alice Johnson",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-09-24 09:12:00Z"
+  },
+  {
+    "id": 1002,
+    "title": "Error 500 on checkout",
+    "description": "Users receive a 500 server error when completing a purchase.",
+    "customer": "Bob Smith",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2025-09-23 15:45:00Z"
+  },
+  {
+    "id": 1003,
+    "title": "Password reset email not sent",
+    "description": "Reset password emails are not being delivered to users.",
+    "customer": "Carol Lee",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-09-22 11:30:00Z"
+  },
+  {
+    "id": 1005,
+    "title": "Slow page load on reports",
+    "description": "Reports page takes more than 15 seconds to load.",
+    "customer": "Eva Green",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-09-20 10:20:00Z"
+  },
+  {
+    "id": 1006,
+    "title": "Notifications not appearing",
+    "description": "Users report missing notifications in the dashboard.",
+    "customer": "Frank White",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2025-09-19 09:00:00Z"
+  },
+  {
+    "id": 1007,
+    "title": "Mobile app crashes on login",
+    "description": "App crashes immediately after entering credentials.",
+    "customer": "Grace Kim",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-09-18 16:35:00Z"
+  },
+  {
+    "id": 1009,
+    "title": "Incorrect tax calculation",
+    "description": "Invoices calculate tax incorrectly for certain regions.",
+    "customer": "Ivy Patel",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2025-09-16 12:05:00Z"
+  },
+  {
+    "id": 1010,
+    "title": "Search function returns no results",
+    "description": "Searching for existing records sometimes yields no results.",
+    "customer": "Jack Wilson",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-09-15 08:40:00Z"
+  },
+  {
+    "id": 1011,
+    "title": "Profile picture upload failing",
+    "description": "Uploading profile images fails with 400 error.",
+    "customer": "Karen Liu",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-09-14 11:25:00Z"
+  },
+  {
+    "id": 1012,
+    "title": "Two-factor authentication not triggering",
+    "description": "Users are able to login without completing 2FA step.",
+    "customer": "Liam Thompson",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-09-13 17:50:00Z"
+  },
+  {
+    "id": 1013,
+    "title": "UI misalignment on dashboard",
+    "description": "Widgets overlap on smaller screens causing layout issues.",
+    "customer": "Mia Wong",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-09-12 14:20:00Z"
+  },
+  {
+    "id": 1014,
+    "title": "Notification badge not updating",
+    "description": "Badge count does not update after reading notifications.",
+    "customer": "Noah Lee",
+    "priority": "Low",
+    "status": "In Progress",
+    "createdAt": "2025-09-11 09:50:00Z"
+  }
+]
